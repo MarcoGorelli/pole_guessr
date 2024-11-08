@@ -36,3 +36,12 @@ if st.session_state.current_image:
 if st.session_state.show_answer and st.session_state.current_image:
     st.write("Country:", st.session_state.current_image.split('/')[1].split('_')[0])
 
+# Footer link
+st.markdown("---")  # A separator line
+st.markdown(
+    "<div style='text-align: center;'>"
+    "<a href='https://github.com/MarcoGorelli/pole_guessr' target='_blank'>"
+    "View Source Code on GitHub</a>"
+    "</div>",
+    unsafe_allow_html=True
+)
