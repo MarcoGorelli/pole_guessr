@@ -3,7 +3,8 @@ import random
 from PIL import Image
 import os
 
-st.title("Click 'Display Random Image' to get started")
+st.title("Pole-guessr")
+st.text("Click 'Display Random Image' to get started")
 
 # List of image file paths (update these paths with your actual image paths)
 image_list = sorted([os.path.join('images', x) for x in os.listdir('images')])
