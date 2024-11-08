@@ -32,4 +32,4 @@ if st.session_state.current_image:
 
 # Display the filename if 'Show Answer' was pressed
 if st.session_state.show_answer and st.session_state.current_image:
-    st.write("File name:", st.session_state.current_image.split('/')[1].split('_')[0])
+    st.write("Country:", st.session_state.current_image.split('/')[1].split('_')[0])
