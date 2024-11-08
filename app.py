@@ -3,6 +3,8 @@ import random
 from PIL import Image
 import os
 
+st.page_link("https://github.com/MarcoGorelli/pole_guessr", label="Source code")
+
 # List of image file paths (update these paths with your actual image paths)
 image_list = sorted([os.path.join('images', x) for x in os.listdir('images')])
 
@@ -34,4 +36,3 @@ if st.session_state.current_image:
 if st.session_state.show_answer and st.session_state.current_image:
     st.write("Country:", st.session_state.current_image.split('/')[1].split('_')[0])
 
-st.page_link("https://github.com/MarcoGorelli/pole_guessr", label="Source code")
