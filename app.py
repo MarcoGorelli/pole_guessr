@@ -33,3 +33,5 @@ if st.session_state.current_image:
 # Display the filename if 'Show Answer' was pressed
 if st.session_state.show_answer and st.session_state.current_image:
     st.write("Country:", st.session_state.current_image.split('/')[1].split('_')[0])
+
+st.page_link("https://github.com/MarcoGorelli/pole_guessr", label="Source code")
